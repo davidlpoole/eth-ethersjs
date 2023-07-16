@@ -1,5 +1,5 @@
 const { assert } = require('chai');
-const signaturePromise = require('./sign');
+const signaturePromise = require('../src/sign');
 const { utils } = require('ethers');
 
 describe('signaturePromise', () => {

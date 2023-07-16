@@ -1,5 +1,5 @@
 const { assert } = require('chai');
-const { wallet1, wallet2 } = require('./wallets');
+const { wallet1, wallet2 } = require('../src/wallets');
 const { Wallet} = require('ethers');
 
 describe('wallets', () => {

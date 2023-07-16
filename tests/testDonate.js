@@ -1,6 +1,6 @@
 const { assert } = require('chai');
-const donate = require('./donate');
-const { PRIVATE_KEY, ganacheProvider } = require('./config');
+const donate = require('../src/donate');
+const { PRIVATE_KEY, ganacheProvider } = require('../src/config');
 
 const ethers = require('ethers');
 const provider = new ethers.providers.Web3Provider(ganacheProvider);

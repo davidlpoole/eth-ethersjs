@@ -1,7 +1,7 @@
 const { assert } = require('chai');
-const { PRIVATE_KEY, ganacheProvider } = require('./config');
+const { PRIVATE_KEY, ganacheProvider } = require('../src/config');
 const { utils, Wallet, providers } = require('ethers');
-const findEther = require('./findEther');
+const findEther = require('../src/findEther');
 
 const FROM_ADDRESS = "0x5409ED021D9299bf6814279A6A1411A7e866A631";
 const provider = new providers.Web3Provider(ganacheProvider);
