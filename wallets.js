@@ -6,7 +6,7 @@ const { Wallet } = ethers;
 const wallet1 = new Wallet(process.env.PRIVATE_KEY);
 
 // create a wallet from mnemonic
-const wallet2 = Wallet.fromPhrase(process.env.PRIVATE_PHRASE);
+const wallet2 = Wallet.fromMnemonic(process.env.PRIVATE_PHRASE);
 
 module.exports = {
     wallet1,

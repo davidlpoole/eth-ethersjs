@@ -1,6 +1,6 @@
 const { assert } = require('chai');
 const { wallet1, wallet2 } = require('./wallets');
-const { Wallet, HDNodeWallet} = require('ethers');
+const { Wallet} = require('ethers');
 
 describe('wallets', () => {
     describe('wallet 1', () => {
@@ -14,7 +14,7 @@ describe('wallets', () => {
     });
     describe('wallet 2', () => {
         it('should be an instance of wallet', () => {
-            assert(wallet2 instanceof HDNodeWallet);
+            assert(wallet2 instanceof Wallet);
         });
 
         it('should unlock the expected address', () => {
